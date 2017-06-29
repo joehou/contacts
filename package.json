@@ -9,6 +9,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "sort-by": "^1.2.0",
     "yarn": "^0.24.5"
   },
   "scripts": {
