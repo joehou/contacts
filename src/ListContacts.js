@@ -36,6 +36,11 @@ class ListContacts extends Component  {
                 <input className="search-contacts" type="text" placeholder="search me"
                        value={query} onChange={event => this.updateQuery(event.target.value)}
                 />
+                <a href ="#create"
+                   onClick={this.props.onNavigate}
+                   className="add-contact">
+                    added contact
+                </a>
             </div>
             {showingContacts.length !== contacts.length && (
                 <div className="showing-contacts">
@@ -68,7 +73,8 @@ class ListContacts extends Component  {
 
 ListContacts.propTypes = {
     contacts: PropTypes.array.isRequired,
-    onDeleteContact: PropTypes.func.isRequired
+    onDeleteContact: PropTypes.func.isRequired,
+    // onNavigate: PropTypes.func.isRequired
 }
 
 export default ListContacts
